@@ -38,9 +38,10 @@ function App() {
   if(tours.length === 0)
   {
     return(
-    <div>
-      <h2>No tours left</h2>
-      <button onClick={() => fetchTours()}>Refresh</button>
+    <div className='flex flex-col justify-center items-center p-[50px]'>
+      <h2 className='text-[50px]'>No tours left</h2>
+      <br/>
+      <button className='bg-sky-300 text-[20px] w-[100px]  h-[50px]  rounded-xl' onClick={() => fetchTours()}>Refresh</button>
     </div>
   )
   }
